@@ -42,8 +42,7 @@ Learn more about npm [here](https://www.npmjs.com/):
     - On your terminal or your broswer navegate to the local host on port 8000
 
     ````
-        curl http://localhost:8000    
-        
+        curl http://localhost:8000
 - At this point you should see somethign like **Cannot GET** that fine we haven't told the server to respond if there are any requests made.
 
 - NOTE: 
@@ -79,15 +78,12 @@ Learn more about npm [here](https://www.npmjs.com/):
  - you should now see:
     ```` 
         Hello from my server
-
 - In a nutshell:
     - When you did
     ````
         curl http://localhost:8000
-
 - This happened:
     ````
         You → Port 3000 → Express → app.get('/') → Response
-
 - This is the entire backend lifecycle simplified.
 
