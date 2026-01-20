@@ -78,5 +78,18 @@ Learn more about npm [here](https://www.npmjs.com/):
 
  - use CTRL-C to stop the server and run it again
  - you should now see:
- ```` 
-    Hello from my server
+    ```` 
+        Hello from my server
+
+
+- In a nutshell:
+    - When you did
+    ````
+        curl http://localhost:8000
+
+- This happened:
+    ````
+        You → Port 3000 → Express → app.get('/') → Response
+
+- This is the entire backend lifecycle simplified.
+
