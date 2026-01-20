@@ -3,6 +3,7 @@ In this part we are going to create a server file to understand how it listens a
 - Before we start we need to install express, before we can install it we need to install npm (Node Package Manager) which like the name implies, is a package manager for javascript running on Node.
 Learn more about npm [here](https://www.npmjs.com/): 
 
+-------
 
 - STEP 1
     - Create one file named **server.js**, open it and paste this code below: 
@@ -25,23 +26,24 @@ Learn more about npm [here](https://www.npmjs.com/):
     - line 4: we define which ip address can make request to our server, 0.0.0.0 means any ip can request, you can change it to any ip you want.
     - line 5: we make our server (app) run and listen to any request from any ip address, when we run the server we will see **Server is running on port 8000** in the console 
 
+-------
+
 - STEP 2 
     - Run the **server.js** file 
 
     ```` 
         node server.js
-
 - At this point your computer is acting like a server, listening for requests on port 8000. its doing nothing else
 
+-------
 
 - STEP 3
     - Talk to the server to make sure everything is running as expected.
     - On your terminal or your broswer navegate to the local host on port 8000
 
     ````
-        curl http://localhost:8000
-    
-
+        curl http://localhost:8000    
+        
 - At this point you should see somethign like **Cannot GET** that fine we haven't told the server to respond if there are any requests made.
 
 - NOTE: 
@@ -56,8 +58,6 @@ Learn more about npm [here](https://www.npmjs.com/):
         app.get('/', (req, res) =>{
             res.send('Hello from my server!!')
         });
-    
-    
 - Now your **server.js** file shoudl look like this
     ````
         const express = require('express');
@@ -71,7 +71,6 @@ Learn more about npm [here](https://www.npmjs.com/):
         app.listen(3000, () => {
             console.log('Server running on port 3000');
         });
-
 - line 1: On this line we added a GET route, when the user visits your server homepage is the same as visiting '/' route, when they make the request to the server they will get a responds back.
 
 - NOTE: we use **(req, res)** this is short for **(request, response)**
@@ -80,7 +79,6 @@ Learn more about npm [here](https://www.npmjs.com/):
  - you should now see:
     ```` 
         Hello from my server
-
 
 - In a nutshell:
     - When you did
