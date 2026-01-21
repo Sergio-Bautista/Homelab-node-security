@@ -55,14 +55,14 @@
 
     - Run your sever with the new code, use the terminal or a web browser to make a request, when you do, you should see **Someone made a request** on the console
 ----
-    ##What we learned with this?
+## What we learned with this?
      - This is logging, blocking, and alerts work in, when someone makes a request with an unknown IP address or other parameters, you can block it, allow it and log it, trigger an alert.
      Your code now knows in a simple way when someone contacts and makes a request. Something to have in mind, Every request can trigger code 
 
 ---- 
 
 - STEP 2 
-    ##Who is talking to my server?
+    ## Who is talking to my server?
 
     - Now lets modify the file again to add one line of code that will let us see the ip address of who is making a request to our server.
     Add the followinf like to your get path on your file.
@@ -116,7 +116,7 @@
         URL: /
     ````
 ----
-    ##What we learned with this?
+## What we learned with this?
     - Now with our new modify file, we can see:
         - Who is talking to the server
         - What method they are using to talk to your server
