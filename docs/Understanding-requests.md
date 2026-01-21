@@ -56,9 +56,8 @@
     - Run your sever with the new code, use the terminal or a web browser to make a request, when you do, you should see **Someone made a request** on the console
 ----
 ## What we learned with this?
-     - This is logging, blocking, and alerts work in, when someone makes a request with an unknown IP address or other parameters, you can block it, allow it and log it, trigger an alert.
-     Your code now knows in a simple way when someone contacts and makes a request. Something to have in mind, Every request can trigger code 
-
+- This is logging, blocking, and alerts work in, when someone makes a request with an unknown IP address or other parameters, you can block it, allow it and log it, trigger an alert.
+Your code now knows in a simple way when someone contacts and makes a request. Something to have in mind, Every request can trigger code 
 ---- 
 
 - STEP 2 
@@ -75,16 +74,17 @@
     This line will allow us to see the IP address of the device that made a request to our server.
     Run your server with the new code, use the terminal or a web browser to make a request to the server, you should see the IP address from the device that make the request.
 
-    - ### Something important to know
-        - Attackers or users can change their IP addresses, this will allow them to __hide__ their original IP address. Some of the methods they use are: 
+### Something important to know
 
-        1 - **Proxies**: An attacker will make the request to a proxy server first, then the proxy server will forward that request to the server, this will log the proxy's IP address instead of the original user that made the request.
+    - Attackers or users can change their IP addresses, this will allow them to __hide__ their original IP address. Some of the methods they use are: 
 
-        2 - **VPNs (Virtual Private Network)**: Similar to proxy servers, a VPN creates an ecrypted tunnel to a remote server. All the traffic the user generates will originate from a different location
+    1 - **Proxies**: An attacker will make the request to a proxy server first, then the proxy server will forward that request to the server, this will log the proxy's IP address instead of the original user that made the request.
 
-        3 - **IP Spoofing**: In a more sophisticated network-level attacks like DDOS. attackers can forge the __Source IP__ in the IP packet header.
+    2 - **VPNs (Virtual Private Network)**: Similar to proxy servers, a VPN creates an ecrypted tunnel to a remote server. All the traffic the user generates will originate from a different location
 
-        4 - **HTTP Header Manipulation**: If the server is behind a load balancer or a proxy server, attackers can sometimes __fake__ thier IP by sending custom headers.
+    3 - **IP Spoofing**: In a more sophisticated network-level attacks like DDOS. attackers can forge the __Source IP__ in the IP packet header.
+
+    4 - **HTTP Header Manipulation**: If the server is behind a load balancer or a proxy server, attackers can sometimes __fake__ thier IP by sending custom headers.
 
     - Your server can know at a simple level identify where traffic comes from and decide what to do, wheather trust or block it.
     In essence, this is the foundation for 
@@ -121,8 +121,11 @@
         - Who is talking to the server
         - What method they are using to talk to your server
         - What are they requesting from the server
-    this allows us to, depending on the request method do diffrent stuff as the name suggests, we can request information from the server (GET), create new information in the server (POST), update existing information in the server (PUT), and delete information in the server (DELETE). Also depending on who is making the request, we can decide to block it or allow it into our network or server.  
 
-    - You should now understand the sentence:
+    This allows us to, depending on the request method do diffrent stuff as the name suggests, we can request information from the server (GET), create new information in the server (POST), update existing information in the server (PUT), and delete information in the server (DELETE). Also depending on who is making the request, we can decide to block it or allow it into our network or server.  
+   
+   
+   
+ - You should now understand the sentence:
         > "A request contains an IP, a method, and a URL, and my server can see all of that.
     
