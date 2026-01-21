@@ -76,21 +76,24 @@ Your code now knows in a simple way when someone contacts and makes a request. S
 
 ### Something important to know
 
-    - Attackers or users can change their IP addresses, this will allow them to __hide__ their original IP address. Some of the methods they use are: 
+- Attackers or users can change their IP addresses, this will allow them to __hide__ their original IP address. Some of the methods they use are: 
 
-    1 - **Proxies**: An attacker will make the request to a proxy server first, then the proxy server will forward that request to the server, this will log the proxy's IP address instead of the original user that made the request.
+1 - **Proxies**: An attacker will make the request to a proxy server first, then the proxy server will forward that request to the server, this will log the proxy's IP address instead of the original user that made the request.
 
-    2 - **VPNs (Virtual Private Network)**: Similar to proxy servers, a VPN creates an ecrypted tunnel to a remote server. All the traffic the user generates will originate from a different location
+2 - **VPNs (Virtual Private Network)**: Similar to proxy servers, a VPN creates an ecrypted tunnel to a remote server. All the traffic the user generates will originate from a different location
 
-    3 - **IP Spoofing**: In a more sophisticated network-level attacks like DDOS. attackers can forge the __Source IP__ in the IP packet header.
+3 - **IP Spoofing**: In a more sophisticated network-level attacks like DDOS. attackers can forge the __Source IP__ in the IP packet header.
 
-    4 - **HTTP Header Manipulation**: If the server is behind a load balancer or a proxy server, attackers can sometimes __fake__ thier IP by sending custom headers.
+4 - **HTTP Header Manipulation**: If the server is behind a load balancer or a proxy server, attackers can sometimes __fake__ thier IP by sending custom headers.
 
-    - Your server can know at a simple level identify where traffic comes from and decide what to do, wheather trust or block it.
-    In essence, this is the foundation for 
-        - Firewalls
-        - Intrusion Detection/Prevention
-        - Rate Limiting
+    
+    
+- Your server can know at a simple level identify where traffic comes from and decide what to do, wheather trust or block it.
+In essence, this is the foundation for 
+    - Firewalls
+    - Intrusion Detection/Prevention
+    - Rate Limiting
+
 ----
 - STEP 3
     - Let's add more code to our server file to get some more information about the request, modify your server file to look like this: 
@@ -117,15 +120,14 @@ Your code now knows in a simple way when someone contacts and makes a request. S
     ````
 ----
 ## What we learned with this?
-    - Now with our new modify file, we can see:
-        - Who is talking to the server
-        - What method they are using to talk to your server
-        - What are they requesting from the server
+- Now with our new modify file, we can see:
+    - Who is talking to the server
+    - What method they are using to talk to your server
+    - What are they requesting from the server
 
-    This allows us to, depending on the request method do diffrent stuff as the name suggests, we can request information from the server (GET), create new information in the server (POST), update existing information in the server (PUT), and delete information in the server (DELETE). Also depending on who is making the request, we can decide to block it or allow it into our network or server.  
-   
-   
-   
- - You should now understand the sentence:
-        > "A request contains an IP, a method, and a URL, and my server can see all of that.
+This allows us to, depending on the request method do diffrent stuff as the name suggests, we can request information from the server (GET), create new information in the server (POST), update existing information in the server (PUT), and delete information in the server (DELETE). Also depending on who is making the request, we can decide to block it or allow it into our network or server.  
+      
+
+- You should now understand the sentence:
+    > "A request contains an IP, a method, and a URL, and my server can see all of that.
     
