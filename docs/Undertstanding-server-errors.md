@@ -36,11 +36,11 @@
     after this the server will stop.
 
 - In a nutshell, this is what happened:
-    1 - Someone made a request 
-    2 - Your server ran the code
-    3 - JavaSvript hit something it didn't understand 
-    4 - Node crashed
-    5 - The server stopped responding
+    - Someone made a request 
+    - Your server ran the code
+    - JavaSvript hit something it didn't understand 
+    - Node crashed
+    - The server stopped responding
     This is considered an __Internal Server Error__ 
 
 - Why Understanding how a server crashes is important?
