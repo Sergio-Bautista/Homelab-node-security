@@ -20,9 +20,28 @@
     - No error handling
     - Open network binding 
 
-- An Attacker:
-    - Sends unexpected input
-    - Looks for ways to crash your server 
+- Most attacks come from:
+    - Bots
+    - Scripts 
+    - Scanners
+- They will:
+    - Scan IP ranges 
+    - Probe common ports
+    - Send malformed requests
 
-
-     
+# PART 1 
+- We saw before how our server crashed when there was an error with a request made
+- Why is this important?
+    - In the real world your server might handle:
+        - Logins 
+        - APIs
+        - Monitoring 
+        - Metrics
+    - A crash means:
+        - No service
+        - No response
+        - Possible data loss
+This is called **Denial of Service**
+- Not hacking
+- Not stealing
+- Just making something unusable
